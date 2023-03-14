@@ -1,0 +1,115 @@
+void ofApp::draw(){
+    for( int j = 0; j<150; j++){
+        
+        for( int i = 0; i<150; i++){
+            float s = 30;
+            float x_coord = -30*s;
+            float y_coord = -30*s;
+            
+            float x_org = (x_coord+4*s*i+2*s*j);
+            float y_org = (y_coord+2*s*i+6*s*j);
+            
+            
+            if( j % 2 == 0){
+                if ((i) % 3 == 0)
+                    ofSetColor(220,45, 10);
+                    ofBeginShape();
+                    ofVertex((x_org+2*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+6*s));
+                    ofVertex((x_org+2*s) , (y_org+6*s));
+                    ofVertex((x_org+2*s),(y_org+4*s));
+                    ofVertex(x_org, (y_org+4*s));
+                    ofVertex(x_org, (y_org+2*s));
+                    ofVertex((x_org+2*s), (y_org+2*s));
+                    ofEndShape(true);
+                if( (i) % 3 == 1)
+                    ofSetColor(226, 219, 4);
+                    ofBeginShape();
+                    ofVertex((x_org+2*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+6*s));
+                    ofVertex((x_org+2*s) , (y_org+6*s));
+                    ofVertex((x_org+2*s),(y_org+4*s));
+                    ofVertex(x_org, (y_org+4*s));
+                    ofVertex(x_org, (y_org+2*s));
+                    ofVertex((x_org+2*s), (y_org+2*s));
+                    ofEndShape(true);
+                if((i) % 3 == 2)
+                    ofSetColor(11, 104, 176);
+                    ofBeginShape();
+                    ofVertex((x_org+2*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+6*s));
+                    ofVertex((x_org+2*s) , (y_org+6*s));
+                    ofVertex((x_org+2*s),(y_org+4*s));
+                    ofVertex(x_org, (y_org+4*s));
+                    ofVertex(x_org, (y_org+2*s));
+                    ofVertex((x_org+2*s), (y_org+2*s));
+                    ofEndShape(true);
+            } else {
+                if ((i) % 3 == 0)
+                    ofSetColor(240, 125, 17);
+                    ofBeginShape();
+                    ofVertex((x_org+2*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+6*s));
+                    ofVertex((x_org+2*s) , (y_org+6*s));
+                    ofVertex((x_org+2*s),(y_org+4*s));
+                    ofVertex(x_org, (y_org+4*s));
+                    ofVertex(x_org, (y_org+2*s));
+                    ofVertex((x_org+2*s), (y_org+2*s));
+                    ofEndShape(true);
+                if((i) % 3 == 1)
+                    ofSetColor(93, 20, 154);
+                    ofBeginShape();
+                    ofVertex((x_org+2*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+6*s));
+                    ofVertex((x_org+2*s) , (y_org+6*s));
+                    ofVertex((x_org+2*s),(y_org+4*s));
+                    ofVertex(x_org, (y_org+4*s));
+                    ofVertex(x_org, (y_org+2*s));
+                    ofVertex((x_org+2*s), (y_org+2*s));
+                    ofEndShape(true);
+                if((i) % 3 == 2)
+                    ofSetColor(ofColor(5, 149, 19));
+                    ofBeginShape();
+                    ofVertex((x_org+2*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org));
+                    ofVertex((x_org+4*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+2*s));
+                    ofVertex((x_org+6*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+4*s));
+                    ofVertex((x_org+4*s), (y_org+6*s));
+                    ofVertex((x_org+2*s) , (y_org+6*s));
+                    ofVertex((x_org+2*s),(y_org+4*s));
+                    ofVertex(x_org, (y_org+4*s));
+                    ofVertex(x_org, (y_org+2*s));
+                    ofVertex((x_org+2*s), (y_org+2*s));
+                    ofEndShape(true);
+            }
+        }
+    }
+}
+                    
